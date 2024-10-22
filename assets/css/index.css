@@ -1,0 +1,216 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+    font-family: "Hanken Grotesk";
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #ecf2ff;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+.top-part {
+    text-align: center;
+    background:linear-gradient(to bottom,#7755FF ,#2F2CE9); 
+    border-bottom-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+}
+
+.top-part h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.45px;
+    padding-block: 24px;
+}
+
+
+
+.calculate  {
+    display:block ;
+    background:linear-gradient(to bottom ,#4D21C9 ,#2F2CE9 70%) ;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    margin-inline: auto;
+    align-content: center;
+    margin-bottom: 28px;
+}
+
+.calculate h2 {
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 72px;
+    color: white; 
+}
+
+
+.calculate p {
+    height: 21px;
+    opacity: 0.52px;
+    color: #CAC9FF;
+    text-align: center;
+    left: 170px;
+    top: 170px;
+    opacity: 51%;
+}
+
+.top-part > span {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.27px;
+    color:#FFFFFF ;
+    margin-bottom: 8px;
+}
+
+.top-part > p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.85px;
+    color: #CAC9FF;
+    padding-bottom: 24px;
+    max-width: 260px;
+    margin-inline: auto;
+}
+
+.down-part {
+    padding: 30px;
+    background-color: white;
+    border-radius: 32px;
+}
+
+.down-part > h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.45px;
+    color:#303B59 ;
+    padding-bottom: 24px;
+}
+
+.rection,
+.memory,
+.verbal,
+.visual {
+    display: flex;
+    padding: 18px;
+    justify-content: space-between;
+    vertical-align: auto;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.down-part img {
+    display: inline-block;
+    padding-right: 12px;
+}
+
+.down-part span {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.85px;
+    color: #303B59;
+}
+
+.rection {
+    background-color: #fff6f6;
+}
+
+.memory {
+    background-color: #fffbf4;
+}
+
+.verbal {
+    background-color: #f2fcf9;
+}
+
+.visual {
+    background-color: #f3f4fd;
+}
+
+button {
+    display: block;
+    background-color:#303B59 ;
+    border: none;
+    border-radius: 128px;
+    width: 315px;
+    height: 56px;
+    margin-bottom: 30px;
+    margin-inline:auto;
+    color: white;
+    cursor: pointer;
+}
+
+@media( width >= 1080px ) {
+    .container {
+        margin-top: 284px;
+        max-width: 736px;
+        max-height: 512px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-inline:auto;
+    }
+
+    .top-part {
+        border-top-left-radius:32px ;
+        border-top-right-radius:32px ;
+    }
+}
